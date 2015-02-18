@@ -27,12 +27,10 @@ makeCacheMatrix <- function(mx = matrix())
     setinverse <- function(inv) inverse <<- inv
 
 	#returns the currently stored inverse matrix.
-                                        getinverse <- function() inverse
+    getinverse <- function() inverse
 
 	#returns a list of 4 functions setter and getter for matrix and its inverse
-                                        list(set = set, get = get,
-                                                setinverse = setinverse,
-                                                getinverse = getinverse)
+    list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
 
 
